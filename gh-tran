@@ -2,8 +2,8 @@
 set -e
 
 repo="abdfnx/gh-tran"
-tag="v0.1.1"
-buildDate="(2022-02-12)"
+tag="v0.0.0"
+buildDate="(0000-00-00)"
 
 extensionPath="$(dirname "$0")"
 arch="$(uname -m)"
