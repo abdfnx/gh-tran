@@ -21,7 +21,7 @@ rm -rf dist
 
 git clone https://github.com/abdfnx/tran trn
 cd trn
-go mod tidy
+go mod tidy -compat=1.18
 
 GOOS=darwin  GOARCH=amd64 go build -ldflags "-X main.version=${tag} -X main.versionDate=${versionDate}" -o "dist/darwin-x86_64" 
 GOOS=linux   GOARCH=386   go build -ldflags "-X main.version=${tag} -X main.versionDate=${versionDate}" -o "dist/linux-i386"
